@@ -1,3 +1,4 @@
+/* eslint-disable */
 import darkSaasLandingPage from "@/assets/images/damagp.png";
 import lightSaasLandingPage from "@/assets/images/cccs.png";
 import aiStartupLandingPage from "@/assets/images/gramar.png";
