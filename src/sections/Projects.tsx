@@ -1,55 +1,68 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import darkSaasLandingPage from "@/assets/images/damagp.png";
+import lightSaasLandingPage from "@/assets/images/cccs.png";
+import aiStartupLandingPage from "@/assets/images/gramar.png";
 import Image from "next/image";
 import CheckCircleIcom from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcom from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg"
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
+import edu from "@/assets/images/eddu.png";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Project Damag",
+    year: "2024",
+    title: "Damag",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Interactive knowledge-sharing platform" },
+      { title: "Designed to foster collaborative learning and idea exchange" },
+      { title: "enables users to engage in meaningful discussions" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
+    link: "https://damag-msyk.vercel.app",
     image: darkSaasLandingPage,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Project Thesis Checker",
+    year: "2024",
+    title: "Thesis-Similarity-Checker-SVM",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "SVM-based Similarity Checking" },
+      { title: "Contains unit tests to ensure the accuracy and reliability of the similarity checking process." },
+      { title: " Implements various similarity metrics to evaluate the similarity between documents" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "https://github.com/delosreyesjohnpaul/Thesis-Similarity-Checker-SVM-V2",
     image: lightSaasLandingPage,
   },
   {
-    company: "Quantum Dynamics",
+    company: "Project Grammar Checker",
     year: "2023",
-    title: "AI Startup Landing Page",
+    title: "Grammar and Spell Checker using Machine Learning",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Leverages machine learning techniques to analyze and correct text." },
+      { title: "Enhance the quality of written content by identifying and suggesting corrections." },
+      { title: "Utilizes advanced machine learning models for accurate analysis and corrections." },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "https://github.com/delosreyesjohnpaul/Grammar-and-Spell-Checker-App-using-Machine-Learning",
     image: aiStartupLandingPage,
+  },
+  {
+    company: "Project Education Recommendation",
+    year: "2024",
+    title: "Education Recommendation System",
+    results: [
+      { title: "Machine learning model built to predict and recommend potential career paths." },
+      { title: "Provides top career recommendations with probabilities using a trained classification model." },
+      { title: "The dataset is scaled and encoded where necessary." },
+    ],
+    link: "https://github.com/delosreyesjohnpaul/Education-Recommendation-System-using-Machine-Learning",
+    image: edu,
   },
 ];
 
 export const ProjectsSection = () => {
   return ( 
-  <section className="pb-16 lg:py-24">
+  <section id="projects" className="pb-16 lg:py-24">
     <div className="container ">
       <SectionHeader eyebrow="Real-World-Results" title="Featured Projects" description="See how I use machine learning to turn data into actionable insights and engaging experiences."/>
       <div className=" mt-10 md:mt-20 flex flex-col gap-20">
